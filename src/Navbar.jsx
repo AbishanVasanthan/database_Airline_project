@@ -40,7 +40,9 @@ const Navbar = () => {
                     <li><Link to="/offers">Offers</Link></li> {/* Link to Offers page */}
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/Airplanes">Airplanes</Link></li>
+                    <li><Link to="/Reports">Reports</Link></li>
                     <li><Link to="/login" className="btn-login">Login</Link></li>
+                    <li><Link to="/register" className="btn-register">Register</Link></li>
 
                 </ul>
                 <div className="navbar-search">

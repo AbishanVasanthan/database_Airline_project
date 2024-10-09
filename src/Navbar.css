@@ -1,60 +1,81 @@
 /* src/components/Navbar.css */
 /* src/components/Navbar.css */
 
-.navbar-logo img {
-  width: 30px; /* Set the desired width */
-  height: 30px; /* Maintain aspect ratio */
-  max-height: 100px; /* Optional: set a max height */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    font-family: Arial, sans-serif; /* Use Arial font for the entire navbar */
-    font-size: 16px; /* Default font size */
-  }
-  
-  .navbar-logo {
-    font-size: 1.5rem; /* Relative to the root font size */
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links li {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-links li a,
-  .navbar-links li button {
-    color: #fff;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    line-height: 1;
-  }
-  
-  .navbar-links li button {
-    background-color: #007bff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-size: 1rem; /* Consistent with default font size */
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-links li button:hover {
-    background-color: #0056b3;
-  }
-  
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.navbar-logo img {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-search {
+  margin-left: auto; /* Pushes the search bar to the right */
+}
+
+.navbar-search input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.btn-login {
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn-register {
+  background-color: #ff0000;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: auto;
+}
+
+.btn-login:hover {
+  background-color: #0056b3;
+}
+
+.btn-register:hover {
+  background-color: #b30000cc;
+}

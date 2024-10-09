@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const RegistrationForm = () => {
+const RegisterForm = () => {
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -45,4 +45,4 @@ const RegistrationForm = () => {
     );
 };
 
-export default RegistrationForm;
+export default RegisterForm;
